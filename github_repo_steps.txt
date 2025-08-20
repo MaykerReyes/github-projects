@@ -1,0 +1,38 @@
+Steps to Create a New GitHub Repository and Upload Files
+=====================================================
+
+1. Create the repository on GitHub
+---------------------------------
+- Go to your repositories page: https://github.com/MaykerReyes?tab=repositories
+- Click **New** → enter repository name (example: python-projects).
+- Choose public/private.
+- Do NOT initialize with README, .gitignore, or license (to avoid conflicts).
+click the green button: Create repository
+
+2. Initialize your local project (if not already a Git repo)
+-----------------------------------------------------------
+Open Git Bash and navigate to your project folder:
+    cd /c/Mayker/Programs/python-projects
+    git init
+
+3. Add and commit your files
+----------------------------
+    git add .
+    git commit -m "Initial commit: Add Python projects"
+
+4. Connect your local repo to GitHub
+------------------------------------
+    git remote add origin https://github.com/MaykerReyes/python-projects.git
+    git branch -M main   # Renames default branch to 'main'
+
+5. Push your changes to GitHub
+------------------------------
+    git push -u origin main
+
+Tips
+----
+- After the first push, future updates can be done with:
+    git add .
+    git commit -m "Update project"
+    git push
+
