@@ -29,10 +29,26 @@ Open Git Bash and navigate to your project folder:
 ------------------------------
     git push -u origin main
 
-Tips
-----
-- After the first push, future updates can be done with:
+
+After the first push, future updates can be done with
+=====================================================
     git add .
     git commit -m "Update project"
     git push
 
+
+Documentation:
+=====================================================
+git branch -M main does two things at once:
+
+Renames the current branch to main.
+
+Older versions of Git used master as the default branch name.
+
+Nowadays, GitHub defaults to main, so this keeps things consistent.
+
+Forces the rename if a branch with that name already exists.
+
+The -M flag means “move/rename branch, overwriting if necessary”.
+
+If you used -m instead, it would fail if main already exists.
